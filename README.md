@@ -2,7 +2,8 @@
 
 ## Tema:
 <br>
-
+<div>
+ 
 Participante | Função | DataInicial | DataTermino
 :-----------: | :-----------: | :-----------: | :-----------: 
 |Ana |||
@@ -12,10 +13,12 @@ Participante | Função | DataInicial | DataTermino
 |Milene|||
 |Paloma|||
 |Rafael|||
-
+ 
+</div>
 <br>
 
 ## Requisitos
+<div>
 
 Conhecimento | Incluido | Não incluso
 :---: | :---: | :----:
@@ -26,3 +29,5 @@ Polimorfismo | | x
 Sobrecarga e Sobreescrita | |  x
 Collections | |x
 Exceptions | | x
+
+ </div>
