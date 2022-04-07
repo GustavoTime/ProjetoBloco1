@@ -19,8 +19,6 @@ Java.
  
 Participante | Função | DataInicial | DataTermino
 :-----------: | :-----------: | :-----------: | :-----------: 
-Participante | Função | DataInicial | DataTermino
-:-----------: | :-----------: | :-----------: | :-----------: 
 |Ana | Pergunta |  07/04/2022|
 |Catherine| MENU | 07/04/2022|
 |Gustavo| MENU| 07/04/2022|
