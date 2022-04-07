@@ -18,16 +18,19 @@ Classes:
         MenuAcerto()
         MenuFim()
   }
-  jogoMain()
+
   Pessoa() {
     Metodos:
         Jogador() - cesar
         Apresentadores() ->  anderson
   }
+
   Pergunta()
+
+  jogoMain()
 ------------------------------------------------
 Atributos:
-Menur{
+Menu{
   Descricao ->
             String regras
   
@@ -56,21 +59,43 @@ Menur{
         int contErro
         String fala
         int parametro
-        RespostaDetalhada() --mostra quantas perguntas acertou, errou, porctagem de acerto mensagem a cada porcentagem( 0% 25% 50% 75% 100%)
+        RespostaDetalhada() --mostra quantas perguntas acertou, errou, porcentagem de acerto mensagem a cada porcentagem( 0% 25% 50% 75% 100%)
 
   Pergunta ->
          function ContadorTempo() 
 }
+
 Pessoa{
   String nome
   String Classe
 }
  
+Pergunta{
+  <List>Pergunta
+  <List>alternativaA
+  <List>alternativaB
+  <List>alternativaC
+  <List>alternativaD
+  <List>resposta
+  
+}
   
 
 
+Grupos
 
+A: Menu
+    Gustavo
+    Catherine
+    
+B: Pessoa
+    Rafael
+    Paloma
 
+C:Pergunta
+    Ana
+    Jhon
+    Milene
 
 
 

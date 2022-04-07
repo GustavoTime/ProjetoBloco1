@@ -19,13 +19,15 @@ Java.
  
 Participante | Função | DataInicial | DataTermino
 :-----------: | :-----------: | :-----------: | :-----------: 
-|Ana |||
-|Catherine|||
-|Gustavo|||
-|Jhonatan|||
-|Milene|||
-|Paloma|||
-|Rafael|||
+Participante | Função | DataInicial | DataTermino
+:-----------: | :-----------: | :-----------: | :-----------: 
+|Ana | Pergunta |  07/04/2022|
+|Catherine| MENU | 07/04/2022|
+|Gustavo| MENU| 07/04/2022|
+|Jhonatan|Pergunta| 07/04/2022|
+|Milene| Pergunta| 07/04/2022|
+|Paloma| Pessoa | 07/04/2022|
+|Rafael| Pessoa| 07/04/2022|
  
 </div>
 <br>
@@ -37,9 +39,9 @@ Participante | Função | DataInicial | DataTermino
 
 Conhecimento | Incluido | Não incluso
 :---: | :---: | :----:
-Classes, Atributos e Objetos | | x 
-Encapsulamento | | x
- Herança | | x
+Classes, Atributos e Objetos | x | 
+Encapsulamento | x | 
+ Herança |x | 
 Polimorfismo | | x
 Sobrecarga e Sobreescrita | |  x
 Collections | |x
