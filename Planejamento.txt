@@ -1,0 +1,77 @@
+Quiz
+
+tema: conheciementos gerais 
+
+alternativas de A a D utilziando switch
+
+
+
+
+__________________________________________________
+Nome do jogo:  Misterios da EsfindEnderson( e as aventuras de Cesar)
+Classes:
+  Menus(){
+    Metodos:
+        Descricao()
+        MenuInical()
+        MenuErro()
+        MenuAcerto()
+        MenuFim()
+  }
+  jogoMain()
+  Pessoa() {
+    Metodos:
+        Jogador() - cesar
+        Apresentadores() ->  anderson
+  }
+  Pergunta()
+------------------------------------------------
+Atributos:
+Menur{
+  Descricao ->
+            String regras
+  
+  MenuInical ->
+            int pontos
+            String nome = Cesar, aventureiro
+            int perguntasCertas
+            int perguntasErradas
+            char opcao
+            int etapa[]
+
+
+            switch(opcao){
+              caso 'a':
+
+            }
+  
+  MenuErro ->
+        15 resposta
+            
+  MenuAcerto ->
+        15 resposta
+
+  MenuFim ->
+        int contAcerto
+        int contErro
+        String fala
+        int parametro
+        RespostaDetalhada() --mostra quantas perguntas acertou, errou, porctagem de acerto mensagem a cada porcentagem( 0% 25% 50% 75% 100%)
+
+  Pergunta ->
+         function ContadorTempo() 
+}
+Pessoa{
+  String nome
+  String Classe
+}
+ 
+  
+
+
+
+
+
+
+
+ 
