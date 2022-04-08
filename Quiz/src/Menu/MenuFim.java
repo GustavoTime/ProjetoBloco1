@@ -1,8 +1,7 @@
 package Menu;
 
-public class MenuFim {
-	private int contAcerto;
-	private int contErro;
+public class MenuFim extends Mae{
+	
 	private String texto;
 	private int totalPergunta;
 
@@ -41,22 +40,7 @@ public class MenuFim {
 	}
 
 	// Metodos auxilaires e mutantes
-	public int getContAcerto() {
-		return contAcerto;
-	}
-
-	public void setContAcerto(int contAcerto) {
-		this.contAcerto = contAcerto;
-	}
-
-	public int getContErro() {
-		return contErro;
-	}
-
-	public void setContErro(int contErro) {
-		this.contErro = contErro;
-	}
-
+	
 	public String getTexto() {
 		return texto;
 	}

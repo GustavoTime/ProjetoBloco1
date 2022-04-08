@@ -35,12 +35,12 @@ Menu{
             String regras
   
   MenuInical ->
-            int pontos
+            ** int contAcerto
+            ** int contErro
+            ** int pontos
             String nome = Cesar, aventureiro
-            int perguntasCertas
-            int perguntasErradas
             char opcao
-            int etapa[]
+            int <List>Etapa
 
 
             switch(opcao){
@@ -49,19 +49,26 @@ Menu{
             }
   
   MenuErro ->
-        15 resposta
+            ** int contAcerto
+            ** int contErro
+            ** int pontos
             
   MenuAcerto ->
-        15 resposta
+            ** int contAcerto
+            ** int contErro  
+            ** int pontos
 
   MenuFim ->
-        int contAcerto
-        int contErro
+        ** int contAcerto
+        ** int contErro
+        ** int pontos
         String fala
         int parametro
         RespostaDetalhada() --mostra quantas perguntas acertou, errou, porcentagem de acerto mensagem a cada porcentagem( 0% 25% 50% 75% 100%)
 
   Pergunta ->
+            int perguntasCertas
+            int perguntasErradas
          function ContadorTempo() 
 }
 
@@ -80,22 +87,6 @@ Pergunta{
   
 }
   
-
-
-Grupos
-
-A: Menu
-    Gustavo
-    Catherine
-    
-B: Pessoa
-    Rafael
-    Paloma
-
-C:Pergunta
-    Ana
-    Jhon
-    Milene
 
 
 
