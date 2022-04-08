@@ -4,9 +4,6 @@ tema: conheciementos gerais
 
 alternativas de A a D utilziando switch
 
-
-
-
 __________________________________________________
 Nome do jogo:  Misterios da EsfindEnderson( e as aventuras de Cesar)
 Classes:
@@ -18,26 +15,29 @@ Classes:
         MenuAcerto()
         MenuFim()
   }
-  jogoMain()
+
   Pessoa() {
     Metodos:
         Jogador() - cesar
         Apresentadores() ->  anderson
   }
+
   Pergunta()
+
+  jogoMain()
 ------------------------------------------------
 Atributos:
-Menur{
+Menu{
   Descricao ->
             String regras
   
   MenuInical ->
-            int pontos
+            ** int contAcerto
+            ** int contErro
+            ** int pontos
             String nome = Cesar, aventureiro
-            int perguntasCertas
-            int perguntasErradas
             char opcao
-            int etapa[]
+            int <List>Etapa
 
 
             switch(opcao){
@@ -46,32 +46,59 @@ Menur{
             }
   
   MenuErro ->
-        15 resposta
+            ** int contAcerto
+            ** int contErro
+            ** int pontos
             
   MenuAcerto ->
-        15 resposta
+            ** int contAcerto
+            ** int contErro  
+            ** int pontos
 
   MenuFim ->
-        int contAcerto
-        int contErro
+        ** int contAcerto
+        ** int contErro
+        ** int pontos
         String fala
         int parametro
-        RespostaDetalhada() --mostra quantas perguntas acertou, errou, porctagem de acerto mensagem a cada porcentagem( 0% 25% 50% 75% 100%)
+        RespostaDetalhada() --mostra quantas perguntas acertou, errou, porcentagem de acerto mensagem a cada porcentagem( 0% 25% 50% 75% 100%)
 
   Pergunta ->
+            int perguntasCertas
+            int perguntasErradas
          function ContadorTempo() 
 }
+
 Pessoa{
   String nome
   String Classe
 }
  
+Pergunta{
+  <List>Pergunta
+  <List>alternativaA
+  <List>alternativaB
+  <List>alternativaC
+  <List>alternativaD
+  <List>resposta
+  
+}
   
 
 
 
-
-
-
-
  
+ 
+ MENU
+_____________________________________________________________________________
+		Descricao(){
+			STRING INFO
+			void: MostrarInfo;
+		}
+        MenuInical(){
+			STRING Nome
+			 
+		}
+        MenuErro()
+        MenuAcerto()
+        MenuFim()
