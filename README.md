@@ -1,5 +1,8 @@
 # ProjetoBloco1
 
+## ATENÇÃO
+ Sempre iniciar dando o comando <strong>git pull origin main</strong>
+
 ##  Objetivo
 
 <div>
