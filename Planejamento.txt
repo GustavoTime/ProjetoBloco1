@@ -4,9 +4,6 @@ tema: conheciementos gerais
 
 alternativas de A a D utilziando switch
 
-
-
-
 __________________________________________________
 Nome do jogo:  Misterios da EsfindEnderson( e as aventuras de Cesar)
 Classes:
@@ -91,3 +88,17 @@ Pergunta{
 
 
  
+ 
+ MENU
+_____________________________________________________________________________
+		Descricao(){
+			STRING INFO
+			void: MostrarInfo;
+		}
+        MenuInical(){
+			STRING Nome
+			 
+		}
+        MenuErro()
+        MenuAcerto()
+        MenuFim()
