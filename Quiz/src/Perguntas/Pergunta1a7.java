@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Pergunta1a7 {
 	private int correto = 0;
 	private int errada = 0;
-	private String r; 
+	private int r; 
 	public double receberResposta;
 
 	public void Pergunta() {
@@ -38,16 +38,16 @@ public class Pergunta1a7 {
 		respostaB[1] = "b- 1 dia";
 		respostaB[2] = "b- Dom Quixote";
 		respostaB[3] = "b- Joinville";
-		respostaB[4] = "b- Justi�a para os menos favorecido";
+		respostaB[4] = "b- Justiça para os menos favorecido";
 		respostaB[5] = "b- Tem entre 4 a 6 litros";
 		respostaB[6] = "b- Inglaterr";
 
 		String[] respostaC = new String[7];
 
-		respostaC[0] = "c-M�naco e Canada" + "";
+		respostaC[0] = "c-Minaco e Canada" + "";
 		respostaC[1] = "c- 12 horas";
 		respostaC[2] = "c- O Pequeno Pr�ncip" + "";
-		respostaC[3] = "c- Bel�m" + "";
+		respostaC[3] = "c- Belém" + "";
 		respostaC[4] = "c- Intoler�ncia religiosa";
 		respostaC[5] = "c- Tem 10 litros" + "";
 		respostaC[6] = "c- Brasi" + "";
@@ -60,12 +60,12 @@ public class Pergunta1a7 {
 		respostaD[3] = "d- Nata" + "";
 		respostaD[4] = "d- Pr�mio Nobel da Pa" + "";
 		respostaD[5] = "d- Tem 7 litros" + "";
-		respostaD[6] = "d- Austr�li" + "";
+		respostaD[6] = "d- Australia" + "";
 
 		String[] respostaCorr = new String[7];
 
 		// Mesma resposta no metodo RespostaA que no metodo RespostaCerta
-		respostaCorr[0] = "a- Vaticano e R�ssia";
+		respostaCorr[0] = "a- Vaticano e Russia";
 		respostaCorr[1] = "d- 8 minutos";
 		respostaCorr[2] = "b- Dom Quixote";
 		respostaCorr[3] = "c- Belém";
@@ -82,17 +82,28 @@ public class Pergunta1a7 {
 			
 			Scanner leia = new Scanner(System.in);
 			System.out.print("Digite a sua resposta: ");
-			this.setR(leia.next());		
+			this.setR(leia.nextInt());			
+			if (this.getR()==1) {
+		    if (respostaA[u]==respostaCorr[u]) {
+		    	System.out.println("ANDERSON DIZ: sua resposta está correta, parceiro!");
+		        this.setCorreto(this.getCorreto()+1);
+		        
+		  }
+		      else  {
+		    	  System.out.println("ANDERSON DIZ: sua resposta está errada, parceiro!\n A resposta correta é: "+respostaCorr[u]);
+		      }
+			}
+             	
 
 		}
 
 	}
 
-	public String getR() {
+	public int getR() {
 		return r;
 	}
 
-	public void setR(String r) {
+	public void setR(int r) {
 		this.r = r;
 	}
 
