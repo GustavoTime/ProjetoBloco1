@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+//Importa as pastas que tem as classes
+import Menu.*;
+import PartePerguntas.*;
+import pessoa.*;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -11,7 +16,7 @@ public class Main {
 		String opcao = esc.next();
 		switch (opcao) {
 		case "a":
-			System.out.println("Começou");
+			System.out.println("Comeï¿½ou");
 		break;
 		case "b":
 			System.out.println("Regras");
