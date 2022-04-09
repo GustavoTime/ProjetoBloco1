@@ -39,7 +39,7 @@ public class Pergunta1a7 {
 		String[] respostaA = new String[21];
 
 		respostaA[0] = "1) Vaticano e Rússia" +"";
-		respostaA[1] = "1) 12 minuto." + "";
+		respostaA[1] = "1) 12 minuto" + "";
 		respostaA[2] = "1) O Senhor dos Anéis" + "";
 		respostaA[3] = "1) São Paulo" + "";
 		respostaA[4] = "1) Igualdade das raças" +"";
@@ -104,7 +104,7 @@ public class Pergunta1a7 {
 		respostaC[15] = "3) Um vulto difuso";
 		respostaC[16] = "3) Girafas e tartarugas";
 		respostaC[17] = "3) 2005";
-		respostaC[18] = "3) 6 períodos.";
+		respostaC[18] = "3) 6 períodos";
 		respostaC[19] = "3) Esôfago e brônquios";
 		respostaC[20] = "3) o nitrato de sódio";
 
@@ -140,7 +140,7 @@ public class Pergunta1a7 {
 		respostaCorr[2] = "2) Dom Quixote";
 		respostaCorr[3] = "3) Belém";
 		respostaCorr[4] = "1) Igualdade das raças";
-		respostaCorr[5] = "2) Tem entre 4 a 6 litros.";
+		respostaCorr[5] = "2) Tem entre 4 a 6 litros";
 		respostaCorr[6] = "3) Brasil";
 		respostaCorr[7] = "3) Zeus e Hades";
 		respostaCorr[8] = "1) 3";
