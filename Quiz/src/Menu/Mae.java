@@ -1,7 +1,5 @@
 package Menu;
 
-
-
 public class Mae {
 	private int contAcerto;
 	private int contErro;
@@ -41,7 +39,4 @@ public class Mae {
 		this.nome = nome;
 	}
 
-	
-
-	
 }
