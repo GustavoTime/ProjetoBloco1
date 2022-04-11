@@ -8,7 +8,7 @@ public class Jogador extends Pessoa {
 	}
 	
 	@Override
-	public void fala() {
+	public void falaCorreta() {
 		System.out.println("Oii!");
 	}
 	

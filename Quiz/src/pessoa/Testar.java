@@ -4,8 +4,8 @@ public class Testar {
 
 	public static void main(String[] args) {
 		
-		Apresentador ap1 = new Apresentador("Rafael", "Sênior");
+		Apresentador ap1 = new Apresentador("Rafael", "SÃªnior");
 		
-		ap1.fala();
+		ap1.falaCorreta();
 	}
 }

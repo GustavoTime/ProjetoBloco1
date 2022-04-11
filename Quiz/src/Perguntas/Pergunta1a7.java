@@ -12,6 +12,7 @@ public class Pergunta1a7 {
 	private int r;
 	public double receberResposta;
 	private Apresentador pessoas;
+	Scanner leia = new Scanner(System.in);
 
 	public void Pergunta() {
 		String[] pergunta = new String[21];
@@ -40,7 +41,7 @@ public class Pergunta1a7 {
 
 		String[] respostaA = new String[21];
 
-		respostaA[0] = "1) Vaticano e R�ssia" + "";
+		respostaA[0] = "1) Vaticano e R�ssia";
 		respostaA[1] = "1) 12 minuto" + "";
 		respostaA[2] = "1) O Senhor dos An�is" + "";
 		respostaA[3] = "1) S�o Paulo" + "";
@@ -166,60 +167,10 @@ public class Pergunta1a7 {
 			System.out.println(respostaC[u]);
 			System.out.println(respostaD[u]);
 
-			Scanner leia = new Scanner(System.in);
 			System.out.print("Digite a sua resposta: ");
 			this.setR(leia.nextInt());
 			if (this.getR() == 1) {
 				if (respostaA[u] == respostaCorr[u]) {
-					// System.out.println("Esfinderson diz: C�sar, o aventureiro, sua resposta est�
-					// correta, parceiro!");
-					pessoas.falaCorreta();
-					this.setCorreto(this.getCorreto() + 1);
-
-				} else {
-
-					// System.out.println("Esfinderson diz: C�sar, o aventureiro, sua resposta est�
-					// errada, parceiro!\n A resposta correta �: "+respostaCorr[u]);
-
-					this.setErrada(getErrada() + 1);
-					pessoas.falaErrada();
-				}
-			}
-			if (this.getR() == 2) {
-				if (respostaB[u] == respostaCorr[u]) {
-					// System.out.println("Esfinderson diz: C�sar, o aventureiro, sua resposta est�
-					// correta, parceiro!");
-					pessoas.falaCorreta();
-					this.setCorreto(this.getCorreto() + 1);
-
-				} else {
-
-					// System.out.println("Esfinderson diz: C�sar, o aventureiro, sua resposta est�
-					// errada, parceiro!\n A resposta correta �: "+respostaCorr[u]);
-
-					this.setErrada(getErrada() + 1);
-					pessoas.falaErrada();
-				}
-			}
-
-			if (this.getR() == 3) {
-				if (respostaC[u] == respostaCorr[u]) {
-					// System.out.println("Esfinderson diz: C�sar, o aventureiro, sua resposta est�
-					// correta, parceiro!");
-					pessoas.falaCorreta();
-					this.setCorreto(this.getCorreto() + 1);
-
-				} else {
-
-					// System.out.println("Esfinderson diz: C�sar, o aventureiro, sua resposta est�
-					// errada, parceiro!\n A resposta correta �: "+respostaCorr[u]);
-
-					this.setErrada(getErrada() + 1);
-					pessoas.falaErrada();
-				}
-			}
-			if (this.getR() == 4) {
-				if (respostaD[u] == respostaCorr[u]) {
 					// System.out.println("Esfinderson diz: C�sar, o aventureiro, sua resposta est�
 					// correta, parceiro!");
 					pessoas.falaCorreta();

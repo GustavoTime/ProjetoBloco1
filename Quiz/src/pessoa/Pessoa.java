@@ -33,7 +33,7 @@ public class Pessoa implements PessoaInterface {
 			System.out.println("Digite um apresentador válido");
 	}
 
-	public void fala() {
+	public void falaCorreta() {
 		System.out.println("Fala padrão:");
 	}
 
