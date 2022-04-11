@@ -1,31 +1,31 @@
 package Menu;
+
 import Perguntas.*;
 
-public class MenuFim extends Mae{
-	
+public class MenuFim extends Mae {
+
 	private String texto;
 	private int totalPergunta;
 	private Pergunta1a7 jog;
 	private int porcentual;
 
-
 	public void receberPesso(Pergunta1a7 perg) {
-			this.jog = perg;
+		this.jog = perg;
 	}
 
 	public void PorcentualAcerto() {
-		
+
 		// Soma o numero de perguntas acertadas e erradas para saber o numero de
 		// perguntas total
 		this.setTotalPergunta(this.jog.getCorreto() + this.jog.getErrada());
 
 		// O porcentual � o numero de perguntas certas * 100 dividido pelo numero de
 		// perguntas total
-		this.setPorcentual( (this.jog.getCorreto() * 100) / this.getTotalPergunta());
-		
-		
+		int por = (this.jog.getCorreto() * 100) / this.getTotalPergunta();
+		this.setPorcentual(por);
+
 	}
-	
+
 	public void Final() {
 		System.out.println("O total de acerto: " + this.jog.getCorreto());
 		System.out.println("O total de erros: " + this.jog.getErrada());
@@ -33,7 +33,7 @@ public class MenuFim extends Mae{
 	}
 
 	// Metodos auxilaires e mutantes
-	
+
 	public String getTexto() {
 		return texto;
 	}
