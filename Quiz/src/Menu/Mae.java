@@ -1,12 +1,10 @@
 package Menu;
 
-
-
 public class Mae {
 	private int contAcerto;
 	private int contErro;
 	private int pontos;
-	private String nome = "cesar";
+	
 
 	// METODOS AUXILIADORES GET E SET
 	public int getContAcerto() {
@@ -33,13 +31,6 @@ public class Mae {
 		this.pontos = pontos;
 	}
 
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
 
 	
 
