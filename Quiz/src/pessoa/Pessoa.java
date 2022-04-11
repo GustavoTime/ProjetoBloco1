@@ -1,12 +1,11 @@
 package pessoa;
 
-public class Pessoa {
+public class Pessoa implements PessoaInterface {
 
 	private String nome;
 	private String classe;
 
 	public Pessoa(String nome, String classe) {
-		super();
 		this.nome = nome;
 		this.classe = classe;
 	}
@@ -26,22 +25,16 @@ public class Pessoa {
 	public void setClasse(String classe) {
 		this.classe = classe;
 	}
-	
-	
-	public void escolherJogador(String nome) {
-		if (nome == "Cesar") {
-			System.out.println("Você escolheu o: " + nome);
-		} else
-			System.out.println("Digite um personagem válido");
-	}
 
-	public void escolherApresentador(String nome) {
+	public void escolher(String nome) {
 		if (nome == "Anderson") {
 			System.out.println("Você escolheu o: " + nome);
-		}
-		else
+		} else
 			System.out.println("Digite um apresentador válido");
+	}
 
+	public void falaCorreta() {
+		System.out.println("Fala padrão:");
 	}
 
 }
