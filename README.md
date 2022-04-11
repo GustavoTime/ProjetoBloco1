@@ -43,9 +43,9 @@ Conhecimento | Incluido | Não incluso
 Classes, Atributos e Objetos | x | 
 Encapsulamento | x | 
  Herança |x | 
-Polimorfismo | | x
-Sobrecarga e Sobreescrita | |  x
-Collections | |x
+Polimorfismo | x | 
+Sobrecarga e Sobreescrita | x |  
+Collections |x |
 Exceptions | | x
 
  </div>
