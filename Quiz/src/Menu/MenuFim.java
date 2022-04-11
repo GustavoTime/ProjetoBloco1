@@ -1,48 +1,57 @@
 package Menu;
+import Perguntas.*;
 
 public class MenuFim extends Mae{
 	
 	private String texto;
 	private int totalPergunta;
+	private Pergunta1a7 jog;
+	private int porcentual;
 
-	public void RespostaDetalhada() {
-		System.out.println("Correto");
+
+	public void receberPesso(Pergunta1a7 perg) {
+			this.jog = perg;
 	}
 
-	// Alterar para receber a resposta do usuario e a lista de resposta certa
-	public void ContAcertosErros(int lit, int certo) {
-
-		// Se a resposta for igual ao gabarito add 1 nos acerto
-		if (lit == certo) {
-			this.setContAcerto(this.getContAcerto() + 1);
-			
-			//Se não add 1 ao erro 
-		} else {
-			
-			this.setContErro(this.getContErro() + 1);
-		}
-
-		System.out.println("contAcertos: " + this.getContAcerto() + "\nContErros: " + this.getContErro());
-	}
-
-	public int PorcentualAcerto() {
-		int porcent = 0;
+	public void PorcentualAcerto() {
+		
 		// Soma o numero de perguntas acertadas e erradas para saber o numero de
 		// perguntas total
-		this.setTotalPergunta(this.getContAcerto() + this.getContErro());
+		this.setTotalPergunta(this.jog.getCorreto() + this.jog.getErrada());
 
-		// O porcentual é o numero de perguntas certas * 100 dividido pelo numero de
+		// O porcentual ï¿½ o numero de perguntas certas * 100 dividido pelo numero de
 		// perguntas total
-		porcent = (this.getContAcerto() * 100) / this.getTotalPergunta();
-
-		// Retorna o valor
-		return porcent;
+		this.setPorcentual( (this.jog.getCorreto() * 100) / this.getTotalPergunta());
+		
+		
+	}
+	
+	public void Final() {
+		System.out.println("O total de acerto: " + this.jog.getCorreto());
+		System.out.println("O total de erros: " + this.jog.getErrada());
+		System.out.println("O porcentural de acerto: " + this.getPorcentual());
 	}
 
 	// Metodos auxilaires e mutantes
 	
 	public String getTexto() {
 		return texto;
+	}
+
+	public Pergunta1a7 getJog() {
+		return jog;
+	}
+
+	public int getPorcentual() {
+		return porcentual;
+	}
+
+	public void setPorcentual(int porcentual) {
+		this.porcentual = porcentual;
+	}
+
+	public void setJog(Pergunta1a7 jog) {
+		this.jog = jog;
 	}
 
 	public void setTexto(String texto) {

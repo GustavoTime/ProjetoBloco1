@@ -18,7 +18,7 @@ public class Apresentador extends Pessoa {
 		fraseCorreta.add("Mas � um grande Imperador mesmo, reposta certa!");
 		fraseCorreta.add("Boa, parceiro!");
 		fraseCorreta.add("Que fofolete, resposta certa, parceiro.");
-		int sorteio = 0;
+		int sorteio = aleatorio.nextInt(3);
 		System.out.println(fraseCorreta.get(sorteio));
 	}
 	

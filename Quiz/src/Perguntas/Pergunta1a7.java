@@ -44,51 +44,51 @@ public class Pergunta1a7 {
 
 		String[] respostaA = new String[21];
 
-		respostaA[0] = "1- Vaticano e R�ssia" + "";
-		respostaA[1] = "1- 12 minuto" + "";
-		respostaA[2] = "1- O Senhor dos An�is" + "";
-		respostaA[3] = "1- S�o Paulo" + "";
-		respostaA[4] = "1- Igualdade das ra�as" + "";
-		respostaA[5] = "1- Tem entre 2 a 4 litros" + "";
-		respostaA[6] = "1- Fran�a" + "";
-		respostaA[7] = "1- Ares e Hermes" + "";
-		respostaA[8] = "1- 3" + "";
-		respostaA[9] = "1- Nos ossos" + "";
-		respostaA[10] = "1- Tempestade de granizo" + "";
-		respostaA[11] = "1- Arist�teles" + "";
-		respostaA[12] = "1- Donatello" + "";
-		respostaA[13] = "1- Saci-Perer�" + "";
-		respostaA[14] = "1- Eu caibo" + "";
-		respostaA[15] = "1- O homem que a viu" + "";
-		respostaA[16] = "1- Baleia azul e golfinhos" + "";
-		respostaA[17] = "1- 2000" + "";
+		respostaA[0] = "1- Vaticano e R�ssia" ;
+		respostaA[1] = "1- 12 minuto" ;
+		respostaA[2] = "1- O Senhor dos An�is" ;
+		respostaA[3] = "1- S�o Paulo" ;
+		respostaA[4] = "1- Igualdade das ra�as" ;
+		respostaA[5] = "1- Tem entre 2 a 4 litros";
+		respostaA[6] = "1- Fran�a" ;
+		respostaA[7] = "1- Ares e Hermes" ;
+		respostaA[8] = "1- 3" ;
+		respostaA[9] = "1- Nos ossos" ;
+		respostaA[10] = "1- Tempestade de granizo" ;
+		respostaA[11] = "1- Arist�teles" ;
+		respostaA[12] = "1- Donatello" ;
+		respostaA[13] = "1- Saci-Perer�" ;
+		respostaA[14] = "1- Eu caibo" ;
+		respostaA[15] = "1- O homem que a viu" ;
+		respostaA[16] = "1- Baleia azul e golfinhos";
+		respostaA[17] = "1- 2000" ;
 		respostaA[18] = "1- 2 per�odos";
-		respostaA[19] = "1- Laringe e traqueia" + "";
-		respostaA[20] = "1- O oxig�nio" + "";
+		respostaA[19] = "1- Laringe e traqueia";
+		respostaA[20] = "1- O oxig�nio" ;
 
 		String[] respostaB = new String[21];
 
-		respostaB[0] = "2- Nauru e China" + "";
-		respostaB[1] = "2- 1 dia" + "";
-		respostaB[2] = "2- Dom Quixote" + "";
-		respostaB[3] = "2- Joinville" + "";
-		respostaB[4] = "2- Justi�a para os menos favorecidos" + "";
-		respostaB[5] = "2- Tem entre 4 a 6 litros" + "";
-		respostaB[6] = "2- Inglaterra" + "";
-		respostaB[7] = "2- Cronos e Apolo" + "";
-		respostaB[8] = "2- 2" + "";
-		respostaB[9] = "2- No tecido dos dedos" + "";
-		respostaB[10] = "2- Tempestade de areia" + "";
-		respostaB[11] = "2- Plat�o" + "";
-		respostaB[12] = "2- Michelangelo" + "";
-		respostaB[13] = "2- Curupira" + "";
-		respostaB[14] = "2- Ele cabe" + "";
-		respostaB[15] = "2- A camisa do homem que era vermelha" + "";
-		respostaB[16] = "2- Morcegos e galinhas" + "";
-		respostaB[17] = "2- 2003" + "";
+		respostaB[0] = "2- Nauru e China"    ;
+		respostaB[1] = "2- 1 dia"    ;
+		respostaB[2] = "2- Dom Quixote" ;
+		respostaB[3] = "2- Joinville";
+		respostaB[4] = "2- Justi�a para os menos favorecidos";
+		respostaB[5] = "2- Tem entre 4 a 6 litros" ;
+		respostaB[6] = "2- Inglaterra";
+		respostaB[7] = "2- Cronos e Apolo";
+		respostaB[8] = "2- 2" ;
+		respostaB[9] = "2- No tecido dos dedos";
+		respostaB[10] = "2- Tempestade de areia";
+		respostaB[11] = "2- Plat�o" ;
+		respostaB[12] = "2- Michelangelo";
+		respostaB[13] = "2- Curupira";
+		respostaB[14] = "2- Ele cabe";
+		respostaB[15] = "2- A camisa do homem que era vermelha";
+		respostaB[16] = "2- Morcegos e galinhas" ;
+		respostaB[17] = "2- 2003";
 		respostaB[18] = "2- 3 per�odos.";
-		respostaB[19] = "2- Pulm�es e faringe" + "";
-		respostaB[20] = "2- O nitrog�nio" + "";
+		respostaB[19] = "2- Pulm�es e faringe" ;
+		respostaB[20] = "2- O nitrog�nio" ;
 
 		String[] respostaC = new String[21];
 
@@ -165,7 +165,7 @@ public class Pergunta1a7 {
 		respostaCorr[20] = "4- O di�xido de carbono";
 
 		for (int u = 0; u < pergunta.length; u++) {
-			System.out.println(pergunta[u]);
+			System.out.println(pergunta[u] + "    Quantidades de acertos: " + this.getCorreto());
 			System.out.println(respostaA[u]);
 			System.out.println(respostaB[u]);
 			System.out.println(respostaC[u]);
@@ -183,6 +183,7 @@ public class Pergunta1a7 {
 					this.pessoas.falaErrada();
 					System.out.println("A resposta certa é: " + respostaCorr[u]);
 					System.out.println("_____________________________________");
+					this.setErrada(getErrada()+1);
 				}
 			}
 			
@@ -195,6 +196,7 @@ public class Pergunta1a7 {
 					this.pessoas.falaErrada();
 					System.out.println("A resposta certa é: " + respostaCorr[u]);
 					System.out.println("_____________________________________");
+					this.setErrada(getErrada()+1);
 				}
 			}
 			
@@ -207,6 +209,7 @@ public class Pergunta1a7 {
 					this.pessoas.falaErrada();
 					System.out.println("A resposta certa é: " + respostaCorr[u]);
 					System.out.println("_____________________________________");
+					this.setErrada(getErrada()+1);
 				}
 			}
 			
@@ -219,6 +222,7 @@ public class Pergunta1a7 {
 					this.pessoas.falaErrada();
 					System.out.println("A resposta certa é: " + respostaCorr[u]);
 					System.out.println("_____________________________________");
+					this.setErrada(getErrada()+1);
 				}
 			}
 			
