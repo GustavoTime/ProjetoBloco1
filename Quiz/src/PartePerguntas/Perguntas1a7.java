@@ -18,6 +18,7 @@ public class Perguntas1a7 {
 			pergunta[5] = "6- Normalmente, quantos litros de sangue uma pessoa tem? ";
 			pergunta[6] = "7- De onde é a invenção do chuveiro elétrico? ";
 			
+		
 		}
 		public void Resposta1() {
 			String [] respostaA = new String[6];
