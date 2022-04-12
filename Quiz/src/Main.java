@@ -12,36 +12,40 @@ public class Main {
 		MenuFim MFim = new MenuFim();
 		Descricao des = new Descricao();
 		int i = 0;
-		do {
-			System.out.println("__________Misterio da Esfinderson_________________________\n");
-			System.out.println("       a- Iniciar       b- Regras      c-Sair");
-			System.out.println("__________________________________________________________");
+		try {
+			do {
 
-			Scanner esc = new Scanner(System.in);
+				System.out.println("__________Misterio da Esfinderson_________________________\n");
+				System.out.println("       a- Iniciar       b- Regras      c-Sair");
+				System.out.println("__________________________________________________________");
 
-			char opcao = esc.next().charAt(0);
+				Scanner esc = new Scanner(System.in);
 
-			switch (opcao) {
+				char opcao = esc.next().charAt(0);
 
-			case 'a':
-				// recebe o objeto e pega seus atributos
-				System.out.println("Brilha que o palco é seuuuuuuu!!!!\n");
-				MFim.receberPesso(p);
-				p.recebePessoa(apre);
-				p.Pergunta();
-				MFim.Final();
-				break;
-			case 'b':
-				des.Msg();
-				break;
-			case 'c':
-				des.Msg("Sair");
-				i = 11;
-				break;
-			}
+				switch (opcao) {
 
-		} while (i < 10);
+					case 'a':
+						// recebe o objeto e pega seus atributos
+						System.out.println("Brilha que o palco é seuuuuuuu!!!!\n");
+						p.recebePessoa(apre);
+						MFim.receberPesso(p);
+						p.Pergunta();
+						MFim.Final();
+						i = 11;
+						break;
+					case 'b':
+						des.Msg();
+						break;
+					case 'c':
+						des.Msg("Sair");
+						i = 11;
+						break;
+				}
 
+			} while (i < 10);
+		} catch (Error e) {
+			System.out.println("Insira um valor valido" + e);
+		}
 	}
-
 }

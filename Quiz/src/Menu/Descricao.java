@@ -3,7 +3,7 @@ package Menu;
 public class Descricao {
 			
 	public void Msg() {
-		System.out.println("REGRAS\n---------------------------------------------");
+		System.out.println("                 REGRAS\n---------------------------------------------");
 		System.out.println("Insira somente as alternativas solicitadas\nEsse jogo é para treinar nossas habilidades como programadores java, espero que vocês gostem");
 	}
 			public void Msg(String info) {

@@ -27,9 +27,10 @@ public class MenuFim extends Mae {
 	}
 
 	public void Final() {
+		this.PorcentualAcerto();
 		System.out.println("O total de acerto: " + this.jog.getCorreto());
 		System.out.println("O total de erros: " + this.jog.getErrada());
-		System.out.println("O porcentural de acerto: " + this.getPorcentual());
+		System.out.println("O porcentural de acerto: " + this.getPorcentual() +"%%");
 	}
 
 	// Metodos auxilaires e mutantes
