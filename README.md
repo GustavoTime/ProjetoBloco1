@@ -22,13 +22,13 @@ Java.
  
 Participante | Função | DataInicial | DataTermino
 :-----------: | :-----------: | :-----------: | :-----------: 
-|Ana | Pergunta |  07/04/2022|
-|Catherine| MENU | 07/04/2022|
-|Gustavo| MENU| 07/04/2022|
-|Jhonatan|Pergunta| 07/04/2022|
-|Milene| Pergunta| 07/04/2022|
-|Paloma| Pessoa | 07/04/2022|
-|Rafael| Pessoa| 07/04/2022|
+|Ana | Pergunta |  07/04/2022| 11/04/2022
+|Catherine| MENU | 07/04/2022|11/04/2022
+|Gustavo| MENU| 07/04/2022|11/04/2022
+|Jhonatan|Pergunta| 07/04/2022|11/04/2022
+|Milene| Pergunta| 07/04/2022|11/04/2022
+|Paloma| Pessoa | 07/04/2022|11/04/2022
+|Rafael| Pessoa| 07/04/2022|11/04/2022
  
 </div>
 <br>
@@ -46,6 +46,6 @@ Encapsulamento | x |
 Polimorfismo | x | 
 Sobrecarga e Sobreescrita | x |  
 Collections |x |
-Exceptions | | x
+Exceptions | x| 
 
  </div>

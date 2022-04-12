@@ -1,6 +1,8 @@
 package Perguntas;
 
 import pessoa.*;
+
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Pergunta1a7 {
@@ -90,20 +92,20 @@ public class Pergunta1a7 {
 
 		String[] respostaC = new String[21];
 
-		respostaC[0] = "3- M�naco e Canadá" ;
+		respostaC[0] = "3- M�naco e Canadá";
 		respostaC[1] = "3- 12 horas";
-		respostaC[2] = "3- O Pequeno Príncipe" ;
-		respostaC[3] = "3- Belém" ;
+		respostaC[2] = "3- O Pequeno Príncipe";
+		respostaC[3] = "3- Belém";
 		respostaC[4] = "3- Intolerância religiosa";
-		respostaC[5] = "3- Tem 10 litros" ;
-		respostaC[6] = "3- Brasil" ;
-		respostaC[7] = "3- Zeus e Hades" ;
+		respostaC[5] = "3- Tem 10 litros";
+		respostaC[6] = "3- Brasil";
+		respostaC[7] = "3- Zeus e Hades";
 		respostaC[8] = "3- 1";
 		respostaC[9] = "3- Nos cabelos";
 		respostaC[10] = "3- Tempestade de raios";
-		respostaC[11] = "3- Sócrates" ;
-		respostaC[12] = "3- Leonardo da Vinci" ;
-		respostaC[13] = "3- Mula sem cabeça" ;
+		respostaC[11] = "3- Sócrates";
+		respostaC[12] = "3- Leonardo da Vinci";
+		respostaC[13] = "3- Mula sem cabeça";
 		respostaC[14] = "3- Eu cabo";
 		respostaC[15] = "3- Um vulto difuso";
 		respostaC[16] = "3- Girafas e tartarugas";
@@ -114,27 +116,27 @@ public class Pergunta1a7 {
 
 		String[] respostaD = new String[21];
 
-		respostaD[0] = "4- Malta e Estados Unidos" ;
+		respostaD[0] = "4- Malta e Estados Unidos";
 		respostaD[1] = "4- 8 minutos";
-		respostaD[2] = "4- Ela, a Feiticeira" ;
-		respostaD[3] = "4- Natal" ;
-		respostaD[4] = "4- Premio Nobel da Paz" ;
-		respostaD[5] = "4- Tem 7 litros" ;
-		respostaD[6] = "4- Austrália" ;
-		respostaD[7] = "4- Dionísio e Deméter" ;
-		respostaD[8] = "4- Nenhuma" ;
-		respostaD[9] = "4- No coração" ;
-		respostaD[10] = "4- Tempestade de relâmpagos" ;
-		respostaD[11] = "4- Descartes" ;
-		respostaD[12] = "4- Rafael Sanzio" ;
-		respostaD[13] = "4- Boitatá" ;
-		respostaD[14] = "4- Nenhuma das alternativas acima" ;
-		respostaD[15] = "4- Nenhuma das alternativas acima" ;
-		respostaD[16] = "4- Porcos e pinguins" ;
-		respostaD[17] = "4- 2004" ;
-		respostaD[18] = "4- 4 períodos" ;
-		respostaD[19] = "4- Tireóide e hip�fise" ;
-		respostaD[20] = "4- O dióxido de carbono" ;
+		respostaD[2] = "4- Ela, a Feiticeira";
+		respostaD[3] = "4- Natal";
+		respostaD[4] = "4- Premio Nobel da Paz";
+		respostaD[5] = "4- Tem 7 litros";
+		respostaD[6] = "4- Austrália";
+		respostaD[7] = "4- Dionísio e Deméter";
+		respostaD[8] = "4- Nenhuma";
+		respostaD[9] = "4- No coração";
+		respostaD[10] = "4- Tempestade de relâmpagos";
+		respostaD[11] = "4- Descartes";
+		respostaD[12] = "4- Rafael Sanzio";
+		respostaD[13] = "4- Boitatá";
+		respostaD[14] = "4- Nenhuma das alternativas acima";
+		respostaD[15] = "4- Nenhuma das alternativas acima";
+		respostaD[16] = "4- Porcos e pinguins";
+		respostaD[17] = "4- 2004";
+		respostaD[18] = "4- 4 períodos";
+		respostaD[19] = "4- Tireóide e hip�fise";
+		respostaD[20] = "4- O dióxido de carbono";
 
 		String[] respostaCorr = new String[21];
 
@@ -161,76 +163,85 @@ public class Pergunta1a7 {
 		respostaCorr[18] = "4- 4 períodos";
 		respostaCorr[19] = "1- Laringe e traqueia";
 		respostaCorr[20] = "4- O dióxido de carbono";
+		
+			for (int u = 0; u < pergunta.length; u++) {
+			
+				System.out.println((u + 1) + " de " + pergunta.length);
+				System.out.println(pergunta[u] + "    Quantidades de acertos: " + this.getCorreto());
+				System.out.println(respostaA[u]);
+				System.out.println(respostaB[u]);
+				System.out.println(respostaC[u]);
+				System.out.println(respostaD[u]);
 
-		for (int u = 0; u < pergunta.length; u++) {
-			System.out.println((u + 1) + " de " + pergunta.length);
-			System.out.println(pergunta[u] + "    Quantidades de acertos: " + this.getCorreto());
-			System.out.println(respostaA[u]);
-			System.out.println(respostaB[u]);
-			System.out.println(respostaC[u]);
-			System.out.println(respostaD[u]);
+				System.out.print("Digite a sua resposta: ");
+		
+				this.setR(leia.nextInt());
+			
+				if (this.getR() == 1) {
+					if (respostaA[u] == respostaCorr[u]) {
+						this.pessoas.falaCorreta();
+						this.setCorreto(this.getCorreto() + 1);
+						System.out.println("");
+						System.out.println("_____________________________________");
 
-			System.out.print("Digite a sua resposta: ");
-
-			this.setR(leia.nextInt());
-			if (this.getR() == 1) {
-				if (respostaA[u] == respostaCorr[u]) {
-					this.pessoas.falaCorreta();
-					this.setCorreto(this.getCorreto() + 1);
-					System.out.println("");
-					System.out.println("_____________________________________");
-				} else {
-					this.pessoas.falaErrada();
-					System.out.println("");
-					System.out.println("A resposta certa é: " + respostaCorr[u]);
-					System.out.println("_____________________________________");
-					this.setErrada(getErrada() + 1);
+					} else {
+						this.pessoas.falaErrada();
+						System.out.println("");
+						System.out.println("A resposta certa é: " + respostaCorr[u]);
+						System.out.println("_____________________________________");
+						this.setErrada(this.getErrada() + 1);
+					}
 				}
-			}
 
-			if (this.getR() == 2) {
-				if (respostaB[u] == respostaCorr[u]) {
-					this.pessoas.falaCorreta();
-					this.setCorreto(this.getCorreto() + 1);
-					System.out.println("_____________________________________");
-				} else {
-					this.pessoas.falaErrada();
-					System.out.println("A resposta certa é: " + respostaCorr[u]);
-					System.out.println("_____________________________________");
-					this.setErrada(getErrada() + 1);
+				if (this.getR() == 2) {
+					if (respostaB[u] == respostaCorr[u]) {
+						this.pessoas.falaCorreta();
+						this.setCorreto(this.getCorreto() + 1);
+						System.out.println("");
+						System.out.println("_____________________________________");
+					} 
+					
+					else {
+						this.pessoas.falaErrada();
+						System.out.println("A resposta certa é: " + respostaCorr[u]);
+						System.out.println("");
+						System.out.println("_____________________________________");
+						this.setErrada(this.getErrada() + 1);
+					}
 				}
-			}
 
-			if (this.getR() == 3) {
-				if (respostaC[u] == respostaCorr[u]) {
-					this.pessoas.falaCorreta();
-					this.setCorreto(this.getCorreto() + 1);
-					System.out.println("_____________________________________");
-				} else {
-					this.pessoas.falaErrada();
-					System.out.println("A resposta certa é: " + respostaCorr[u]);
-					System.out.println("_____________________________________");
-					this.setErrada(getErrada() + 1);
+				if (this.getR() == 3) {
+					if (respostaC[u] == respostaCorr[u]) {
+						this.pessoas.falaCorreta();
+						this.setCorreto(this.getCorreto() + 1);
+						System.out.println("");
+						System.out.println("_____________________________________");
+					} else {
+						this.pessoas.falaErrada();
+						System.out.println("A resposta certa é: " + respostaCorr[u]);
+						System.out.println("");
+						System.out.println("_____________________________________");
+						this.setErrada(this.getErrada() + 1);
+					}
 				}
-			}
 
-			if (this.getR() == 4) {
-				if (respostaD[u] == respostaCorr[u]) {
-					this.pessoas.falaCorreta();
-					this.setCorreto(this.getCorreto() + 1);
-					System.out.println("_____________________________________");
-				} else {
-					this.pessoas.falaErrada();
-					System.out.println("A resposta certa é: " + respostaCorr[u]);
-					System.out.println("_____________________________________");
-					this.setErrada(getErrada() + 1);
+				if (this.getR() == 4) {
+					if (respostaD[u] == respostaCorr[u]) {
+						this.pessoas.falaCorreta();
+						this.setCorreto(this.getCorreto() + 1);
+						System.out.println("_____________________________________");
+					} else {
+						this.pessoas.falaErrada();
+						System.out.println("A resposta certa é: " + respostaCorr[u]);
+						System.out.println("_____________________________________");
+						this.setErrada(this.getErrada() + 1);
+					}
 				}
+	
 			}
-
-		}
-
+		
+	
 	}
-
 	public Apresentador getPessoas() {
 		return pessoas;
 	}
