@@ -27,7 +27,7 @@ public class Main {
 
 					case 'a':
 						// recebe o objeto e pega seus atributos
-						System.out.println("Brilha que o palco é seuuuuuuu!!!!\n");
+						System.out.println("Brilha que o palco e seuuuuuuu!!!!\n");
 						p.recebePessoa(apre);
 						MFim.receberPesso(p);
 						p.Pergunta();

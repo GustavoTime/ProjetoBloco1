@@ -28,13 +28,13 @@ public class Pessoa implements PessoaInterface {
 
 	public void escolher(String nome) {
 		if (nome == "Anderson") {
-			System.out.println("Você escolheu o: " + nome);
+			System.out.println("Voce escolheu o: " + nome);
 		} else
-			System.out.println("Digite um apresentador válido");
+			System.out.println("Digite um apresentador valido");
 	}
 
 	public void falaCorreta() {
-		System.out.println("Fala padrão:");
+		System.out.println("Fala padrao:");
 	}
 
 }

@@ -16,7 +16,7 @@ public class Apresentador extends Pessoa {
 
 	@Override
 	public void falaCorreta() {
-		fraseCorreta.add("Mas � um grande Imperador mesmo, reposta certa!");
+		fraseCorreta.add("Mas e um grande Imperador mesmo, reposta certa!");
 		fraseCorreta.add("Boa, parceiro!");
 		fraseCorreta.add("Que fofolete, resposta certa, parceiro.");
 		int sorteio = aleatorio.nextInt(3);
@@ -25,9 +25,9 @@ public class Apresentador extends Pessoa {
 
 	public void falaErrada() {
 		fraseFalsa.add(
-				"N�o foi dessa vez, parceiro. Resposta errada! Fiquei como malvado novamente e voc� como bonzinho.");
-		fraseFalsa.add("C�sar, o aventureiro, voc� foi fofolete na reposta, mas est� incorreta.");
-		fraseFalsa.add("N�o � bem assim, parceiro!");
+				"Nao foi dessa vez, parceiro. Resposta errada! Fiquei como malvado novamente e voce como bonzinho.");
+		fraseFalsa.add("Cesar, o aventureiro, voce foi fofolete na reposta, mas esta incorreta.");
+		fraseFalsa.add("Nao e bem assim, parceiro!");
 		System.out.println(fraseFalsa.get(aleatorio.nextInt(3)));
 	}
 
